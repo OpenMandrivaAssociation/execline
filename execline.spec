@@ -1,6 +1,6 @@
 Name:			execline
 Version:		1.08
-Release:		%mkrel 1
+Release:		%mkrel 2
 
 %define _bindir		/bin
 
@@ -11,7 +11,6 @@ URL:		http://www.skarnet.org/software/execline/
 Source0:	http://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}
-BuildRequires:  dietlibc-devel >= 0.28
 BuildRequires:  skalibs-devel >= 0.40
 
 %description
@@ -26,12 +25,11 @@ designed for use in embedded systems, but works on most Unix flavors.
 
 
 %build
-COMP="diet gcc"
 
 pushd %{name}-%{version}
-    echo "$COMP -O2 -W -Wall -fomit-frame-pointer -pipe" > conf-compile/conf-cc
-    echo "$COMP -Os -static -s" > conf-compile/conf-ld
-    echo "strip" >conf-compile/conf-stripbins
+    echo "gcc %{optflags}" > conf-compile/conf-cc
+    echo "gcc %{optflags}" > conf-compile/conf-ld
+    echo "/bin/true" >conf-compile/conf-stripbins
 
     echo "linux-:%{_target_cpu}-:" > src/sys/systype
 
