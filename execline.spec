@@ -1,6 +1,6 @@
 Name:			execline
 Version:		1.08
-Release:		%mkrel 3
+Release:		%mkrel 4
 
 %define _bindir		/bin
 
