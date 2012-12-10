@@ -67,3 +67,31 @@ popd
 %config(noreplace) %{_sysconfdir}/execline-shell
 %config(noreplace) %{_sysconfdir}/execline-startup
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.08-4mdv2011.0
++ Revision: 618247
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 1.08-3mdv2010.0
++ Revision: 437503
+- rebuild
+
+* Wed Jan 28 2009 Oden Eriksson <oeriksson@mandriva.com> 1.08-2mdv2009.1
++ Revision: 335008
+- build against glibc to make it work again
+
+* Wed Jan 28 2009 Oden Eriksson <oeriksson@mandriva.com> 1.08-1mdv2009.1
++ Revision: 334960
+- 1.08 (source from freebsd)
+
+* Thu Aug 07 2008 Thierry Vignaud <tv@mandriva.org> 1.07-2mdv2009.0
++ Revision: 266738
+- rebuild early 2009.0 package (before pixel changes)
+
+* Wed May 07 2008 Vincent Danen <vdanen@mandriva.com> 1.07-1mdv2009.0
++ Revision: 202938
+- import execline
+
+
