@@ -7,7 +7,7 @@ Release:		%mkrel 4
 Summary:	A light non-interactive scripting language
 License:	BSD
 Group:		Shells
-URL:		http://www.skarnet.org/software/execline/
+URL:		https://www.skarnet.org/software/execline/
 Source0:	http://www.skarnet.org/software/%{name}/%{name}-%{version}.tar.gz
 
 BuildRoot:	%{_tmppath}/%{name}-%{version}
